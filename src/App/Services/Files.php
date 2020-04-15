@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelMerax\FileServer\App\Services\FileServer;
+namespace LaravelMerax\FileServer\App\Services;
 
 use Illuminate\Http\File;
 use LaravelMerax\FileServer\App\Contracts\Attachable;

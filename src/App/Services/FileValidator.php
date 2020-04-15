@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelMerax\FileServer\App\Services\FileServer;
+namespace LaravelMerax\FileServer\App\Services;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
