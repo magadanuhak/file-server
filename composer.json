@@ -1,0 +1,33 @@
+{
+    "name": "laravel-merax/file-server",
+    "type": "library",
+    "license": "MIT",
+    "description": "File Server dependency for Laravel Merax",
+    "authors": [
+        {
+            "name": "Sergiu Popa",
+            "email": "popa.sergiu920@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "laravel-enso/image-transformer": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelMerax\\FileServer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelMerax\\FileServer\\AppServiceProvider",
+                "LaravelMerax\\FileServer\\FileServiceProvider",
+                "LaravelMerax\\FileServer\\UploadServiceProvider"
+            ],
+            "aliases": {
+                "FileBrowser": "LaravelMerax\\FileServer\\App\\Facades\\FileBrowser"
+            }
+        }
+    }
+}
