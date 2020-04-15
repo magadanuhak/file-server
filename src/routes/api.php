@@ -22,7 +22,7 @@ Route::prefix('api/v1/files')
         Route::get('', Index::class)->name('index');
         Route::get('link/{file}', Link::class)->name('link');
         Route::get('download/{file}', Download::class)->name('download');
-        Route::delete('{file}', \App\Http\Controllers\File\Destroy::class)->name('destroy');
+        Route::delete('{file}', LaravelMerax\FileServer\App\Http\Controllers\File\Destroy::class)->name('destroy');
         Route::get('show/{file}', Show::class)->name('show');
     });
 
