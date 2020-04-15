@@ -4,7 +4,7 @@
 namespace LaravelMerax\FileServer\App\Models;
 
 
-use LaravelMerax\FileServer\App\Services\FileBrowser;
+use LaravelMerax\FileServer\App\Facades\FileBrowser;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Facades\Storage;
