@@ -4,7 +4,7 @@
 namespace LaravelMerax\FileServer\App\Http\Controllers\File;
 
 
-use LaravelMerax\FileServer\App\Models\FileServer\File;
+use LaravelMerax\FileServer\App\Models\File;
 use Illuminate\Routing\Controller;
 
 class Destroy extends Controller

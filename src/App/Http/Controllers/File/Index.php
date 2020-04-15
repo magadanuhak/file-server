@@ -6,7 +6,7 @@ namespace LaravelMerax\FileServer\App\Http\Controllers\File;
 
 
 use LaravelMerax\FileServer\App\Http\Resources\FilesCollection;
-use LaravelMerax\FileServer\App\Models\FileServer\File;
+use LaravelMerax\FileServer\App\Models\File;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 

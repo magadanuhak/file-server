@@ -4,7 +4,7 @@
 namespace LaravelMerax\FileServer\App\Http\Controllers\Upload;
 
 
-use App\Models\FileServer\Upload;
+use LaravelMerax\FileServer\App\Models\Upload;
 use Illuminate\Routing\Controller;
 
 class Destroy extends Controller

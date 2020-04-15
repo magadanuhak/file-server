@@ -4,8 +4,8 @@
 namespace LaravelMerax\FileServer\App\Services;
 
 
-use LaravelMerax\FileServer\App\Models\FileServer\File;
-use LaravelMerax\FileServer\App\Models\FileServer\Upload;
+use LaravelMerax\FileServer\App\Models\File;
+use LaravelMerax\FileServer\App\Models\Upload;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;

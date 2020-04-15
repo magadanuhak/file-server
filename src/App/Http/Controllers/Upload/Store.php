@@ -5,7 +5,7 @@ namespace LaravelMerax\FileServer\App\Http\Controllers\Upload;
 
 
 use App\Http\Controllers\Controller;
-use App\Models\FileServer\Upload;
+use LaravelMerax\FileServer\App\Models\Upload;
 use Illuminate\Http\Request;
 
 class Store extends Controller
