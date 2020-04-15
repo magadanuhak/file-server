@@ -29,8 +29,7 @@ class File extends Model
 
     public function type(): string
     {
-        //return FileBrowser::folder($this->attachable_type);
-        return (new FileBrowser())->folder($this->attachable_type);
+        return FileBrowser::folder($this->attachable_type);
     }
 
     public function path()
@@ -50,8 +49,7 @@ class File extends Model
     public function scopeVisible($query)
     {
         $query->hasMorph(
-            //'attachable', FileBrowser::models()->toArray()
-            'attachable', (new FileBrowser())->models()->toArray()
+            'attachable', FileBrowser::models()->toArray()
         );
     }
 }
