@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\File\Download;
-use App\Http\Controllers\File\Index;
-use App\Http\Controllers\File\Link;
-use App\Http\Controllers\File\Show;
-use App\Http\Controllers\Upload\Destroy;
-use App\Http\Controllers\Upload\Store;
+use LaravelMerax\FileServer\App\Http\Controllers\File\Download;
+use LaravelMerax\FileServer\App\Http\Controllers\File\Index;
+use LaravelMerax\FileServer\App\Http\Controllers\File\Link;
+use LaravelMerax\FileServer\App\Http\Controllers\File\Show;
+use LaravelMerax\FileServer\App\Http\Controllers\Upload\Destroy;
+use LaravelMerax\FileServer\App\Http\Controllers\Upload\Store;
 
 Route::prefix('api/v1/uploads')
     ->as('v1.uploads.')
