@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelMerax\FileServer\App\Models\FileServer;
+namespace LaravelMerax\FileServer\App\Models;
 
 
 use LaravelMerax\FileServer\App\Services\FileServer\FileBrowser;
