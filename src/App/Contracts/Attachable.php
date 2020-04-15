@@ -5,7 +5,7 @@ namespace LaravelMerax\FileServer\App\Contracts;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Http\File;
 use Illuminate\Http\UploadedFile;
-use App\Models\User;
+use App\Models\User\User;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 interface Attachable

@@ -3,9 +3,9 @@
 
 namespace LaravelMerax\FileServer\App\Traits;
 
-use App\Models\File;
+use LaravelMerax\FileServer\App\Models\File;
 use App\Models\User\User;
-use App\Services\FileServer\Files;
+use LaravelMerax\FileServer\App\Services\Files;
 use Illuminate\Http\File as IlluminateFile;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Http\UploadedFile;
