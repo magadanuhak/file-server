@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/routes/api.php');
 
-        $this->mergeConfigFrom(__DIR__.'/config/files.php', 'enso.files');
+        $this->mergeConfigFrom(__DIR__.'/config/files.php', 'files');
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/config' => config_path('enso'),
-        ], ['files-config', 'enso-config']);
+        ], ['files-config', 'config']);
 
         $this->publishes([
             __DIR__.'/../stubs/FileServiceProvider.stub' => app_path(
