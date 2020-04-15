@@ -28,4 +28,4 @@ Route::prefix('api/v1/files')
         Route::get('show/{file}', Show::class)->name('show');
     });
 
-Route::get('v1/files/share/{file}', Share::class)->name('files.share');
+Route::get('v1/files/share/{file}', Share::class)->name('v1.files.share');
