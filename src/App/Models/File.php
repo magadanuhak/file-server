@@ -8,9 +8,12 @@ use LaravelMerax\FileServer\App\Facades\FileBrowser;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Facades\Storage;
+use App\Traits\Mutator\AuthorIdMutator;
 
 class File extends Model
 {
+    use AuthorIdMutator;
+
     protected $fillable = ['original_name', 'saved_name', 'size', 'mime_type', 'created_by'];
 
     public function attachable(): MorphTo
