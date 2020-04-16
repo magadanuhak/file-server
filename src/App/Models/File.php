@@ -4,6 +4,7 @@
 namespace LaravelMerax\FileServer\App\Models;
 
 
+use Illuminate\Support\Facades\Auth;
 use LaravelMerax\FileServer\App\Facades\FileBrowser;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -12,7 +13,7 @@ use App\Traits\Mutator\AuthorIdMutator;
 
 class File extends Model
 {
-    use AuthorIdMutator;
+    use AuthorId;
 
     protected $fillable = ['original_name', 'saved_name', 'size', 'mime_type', 'created_by'];
 
