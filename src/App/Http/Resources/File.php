@@ -15,7 +15,7 @@ class File extends JsonResource
             'name'      => $this->original_name,
             'size'      => $this->size,
             'mimeType'  => $this->mime_type,
-            'owner'     => '',
+            'author_id' => $this->whenLoaded('author_id'),
             'createdAt' => $this->created_at->toDatetimeString(),
         ];
     }

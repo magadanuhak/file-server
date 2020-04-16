@@ -12,8 +12,6 @@ class Store extends Controller
 {
     public function __invoke(Request $request, Upload $upload)
     {
-        $request->merge(['author_id' => \user()->id]);
-
         return $upload->store($request->allFiles());
     }
 }
