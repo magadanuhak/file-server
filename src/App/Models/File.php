@@ -15,7 +15,7 @@ class File extends Model
 {
     use AuthorId;
 
-    protected $fillable = ['original_name', 'saved_name', 'size', 'mime_type', 'created_by'];
+    protected $fillable = ['original_name', 'saved_name', 'size', 'mime_type', 'author_id'];
 
     public function attachable(): MorphTo
     {
