@@ -9,7 +9,7 @@ use LaravelMerax\FileServer\App\Facades\FileBrowser;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Facades\Storage;
-use App\Traits\Mutator\AuthorIdMutator;
+use App\Traits\Mutator\AuthorId;
 
 class File extends Model
 {
