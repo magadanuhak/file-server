@@ -26,8 +26,7 @@ class UploadManager
     public function handle(): Collection
     {
         DB::transaction(function () {
-            $this->checkExisting()
-                ->uploadFiles();
+            $this->uploadFiles();
         });
 
         return $this->uploadedFiles;
