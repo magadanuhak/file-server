@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Facades\Storage;
 use App\Traits\Mutator\AuthorId;
+use Illuminate\Support\Str;
 
 class File extends Model
 {
@@ -20,6 +21,14 @@ class File extends Model
     public function getRouteKeyName(): string
     {
         return 'uuid';
+    }
+
+    protected static function boot(): void
+    {
+        static::creating(static function ($package) {
+            $package->uuid = (string)Str::orderedUuid();
+        });
+        parent::boot();
     }
 
     public function attachable(): MorphTo
