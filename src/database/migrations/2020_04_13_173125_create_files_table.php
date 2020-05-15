@@ -15,7 +15,7 @@ class CreateFilesTable extends Migration
     {
         Schema::create('files', static function (Blueprint $table) {
             $table->increments('id');
-
+            $table->uuid('uuid')->unique();
             $table->morphs('attachable');
 
             $table->string('original_name')->index();

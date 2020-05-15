@@ -17,6 +17,11 @@ class File extends Model
 
     protected $fillable = ['original_name', 'saved_name', 'size', 'mime_type', 'author_id'];
 
+    public function getRouteKeyName(): string
+    {
+        return 'uuid';
+    }
+
     public function attachable(): MorphTo
     {
         return $this->morphTo();
