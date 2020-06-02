@@ -23,7 +23,7 @@ class CreateFilesTable extends Migration
             $table->integer('size');
             $table->string('mime_type')->nullable();
 
-            $table->unsignedInteger('author_id')->comment('Автор');
+            $table->unsignedInteger('author_id')->nullable()->comment('Автор');
             $table->foreign('author_id')
                 ->on('users')
                 ->references('id')
