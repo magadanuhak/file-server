@@ -4,7 +4,7 @@
 namespace LaravelMerax\FileServer\App\Services;
 
 use Illuminate\Support\Facades\Validator;
-use LaravelEnso\ImageTransformer\App\Services\ImageTransformer;
+use LaravelEnso\ImageTransformer\Services\ImageTransformer;
 use Symfony\Component\HttpFoundation\File\File;
 
 class ImageProcessor
