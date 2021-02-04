@@ -1,5 +1,5 @@
 {
-    "name": "laravel-merax/file-server",
+    "name": "magadanuhak/file-server",
     "type": "library",
     "license": "MIT",
     "description": "File Server dependency for Laravel Merax",
